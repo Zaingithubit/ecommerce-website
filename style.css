@@ -749,6 +749,103 @@ margin-right: 15px;
   font-weight: 600;
 
 }
+/* #################cart page styling ##########3 */
+#cart{
+  overflow-x: auto;
+}
+#cart table{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+#cart table img{
+  width: 70px;
+}
+#cart table td:nth-child(1)
+{
+  width: 100px ;
+  text-align: center;
+}
+#cart table td:nth-child(2)
+{
+  width: 150px ;
+  text-align: center;
+}
+#cart table td:nth-child(3)
+{
+  width: 250px ;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6)
+{
+  width: 150px ;
+  text-align: center;
+}
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 15px 10px 15px;
+}
+#cart table thead{
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td{
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 0;
+  text-transform: uppercase;
+} #cart table tbody tr td{
+  padding-top: 20px;
+}
+#cart table tbody td{
+  font-size: 14px;
+}
+#cart-coupons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#cart-coupons .coupons{
+  width: 50%;
+}
+#cart-coupons .coupons h3,
+#cart-coupons .subtotal h3 {
+  padding-bottom: 15px;
+}
+#cart-coupons .coupons input{
+  width: 60%;
+  padding: 10px 20px;
+  margin-right: 15px ;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #e2e9e1;
+}
+#cart-coupons .coupons button,#cart-coupons .subtotal button{
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+#cart-coupons .subtotal{
+  width: 50%;
+  margin-bottom: 20px ;
+  padding: 30px;
+  border: 1px solid #e1e1e1;
+}
+#cart-coupons .subtotal table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+#cart-coupons .subtotal table td{
+  width: 50%;
+  padding: 10px 20px;
+  font-size: 13px;
+  border: 1px solid #e1e1e1;
+}
 /*################ style the media quries ##################3*/
 @media (max-width: 768px){
   .section-p1{
@@ -973,5 +1070,18 @@ h1 {
 }
 #form-details form {
   width: 100%;margin-bottom: 30px;
+}
+/* cart page  */
+#cart-coupons {
+ flex-direction: column;
+}
+#cart-coupons .coupons {
+  width: 100%;
+}
+#cart-coupons .subtotal {
+  width: 100%; 
+  padding: 20px;
+  margin-top: 20px;
+  
 }
 }
